@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<article class="post">
+  <h1>{{ page.title }}</h1>
+
+  <div class="entry">
+    {{ content }}
+  </div>
+
+  <div class="date">
+    Written on {{ page.date | date: "%B %e, %Y" }}
+  </div>
+
+  
+  <!-- START OF RELEVANT PART -->
+  <div
+    class="just-comments"
+    data-allowguests="true"
+    data-apikey="f53b2fe7-bf7a-42d4-99d9-23e68217bd8f">
+  </div>
+  <!-- END OF RELEVANT PART -->
+
+  {% include disqus.html %}
+</article>
